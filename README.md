@@ -1,6 +1,7 @@
 ![banner](https://github.com/user-attachments/assets/6972d1c6-cfbb-4171-8131-fcc7e75ba4fb)
 
 <br>  
+
 ### Welcome to Quasar!
 Quasar is My personal website featuring My projects as well as some social media marketing services. For now, it's a very simplistic website. I'll update it and add more content whenever I have some free time on My hands!
 
