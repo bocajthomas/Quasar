@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The official Quasar Developer website.">
+    <meta name="keywords" content="Official, Quasar, Developer, Development, Website, Project, Projects, Service, Services, Free, Cheap">
+    <meta name="author" content="Quasar Developer">
+    
+    <title>Quasar</title>
+    
+    <link rel="icon" href="assets/images/branding/favicon.ico">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/background.css">
+    <link rel="stylesheet" href="assets/css/scrollbar.css">
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        img {
+            width: 85px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #1e1e1e;
+            transform: scale(1.05);
+        }
+    </style>
+    
+</head>
+    
+<body>
+    <img src="assets/images/icons/welcome.png" alt="Welcome">
+    
+    <br>
+    
+    <h4>Welcome to Quasar</h4>
+    <p>Hey there and welcome!</p>
+    <button class="button" onclick="redirect()">Continue</button>
+
+    <script>
+        function redirect() {
+            window.location.href = "website/home.html";
+        }
+    </script>
+</body>
+    
+</html>

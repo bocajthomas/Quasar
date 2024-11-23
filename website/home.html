@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The official Quasar Developer website.">
+    <meta name="keywords" content="Official, Quasar, Developer, Development, Website, Project, Projects, Service, Services, Free, Cheap">
+    <meta name="author" content="Quasar Developer">
+    
+    <title>Quasar</title>
+    
+    <link rel="icon" href="https://quasarnet.github.io/Quasar/assets/images/branding/favicon.ico">
+    <link rel="stylesheet" href="https://quasarnet.github.io/Quasar/assets/css/responsive.css">
+    <link rel="stylesheet" href="https://quasarnet.github.io/Quasar/assets/css/background.css">
+    <link rel="stylesheet" href="https://quasarnet.github.io/Quasar/assets/css/scrollbar.css">
+    
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: none;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #1e1e1e;
+            border-bottom: 2px solid #ffffff;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar img {
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .navbar img:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background-color: #1e1e1e;
+            transform: scale(1.05);
+        }
+    </style>
+    
+</head>
+    
+<body>
+
+    <div class="navbar">
+        <a href="https://quasarnet.github.io/Quasar/website/home.html"><img src="https://quasarnet.github.io/Quasar/assets/images/icons/home.png" alt="Home"></a>
+        <a href="https://quasarnet.github.io/Quasar/website/info/about.html"><img src="https://quasarnet.github.io/Quasar/assets/images/icons/info.png" alt="Info"></a>
+        <a href="https://quasarnet.github.io/Quasar/website/projects/webview-apks.html"><img src="https://quasarnet.github.io/Quasar/assets/images/icons/projects.png" alt="Projects"></a>
+        <a href="https://quasarnet.github.io/Quasar/website/services/services.html"><img src="https://quasarnet.github.io/Quasar/assets/images/icons/services.png" alt="Services"></a>
+        <a href="https://quasarnet.github.io/Quasar/" onclick="closeSite()"><img src="https://quasarnet.github.io/Quasar/assets/images/icons/exit.png" alt="Exit"></a>
+    </div>
+
+    <div class="content">
+        <img src="#" alt="Home">
+        <h4>Home</h4>
+        <p>Choose where You want to go!</p>
+        <button class="button" onclick="redirectToInfo()">Info</button>
+        <button class="button" onclick="redirectToProjects()">Projects</button>
+        <button class="button" onclick="redirectToServices()">Services</button>
+    </div>
+
+    <script>
+        function redirectToInfo() {
+            window.location.href = "https://quasarnet.github.io/Quasar/website/info/about.html";
+        }
+
+        function redirectToProjects() {
+            window.location.href = "https://quasarnet.github.io/Quasar/website/projects/webview-apks.html";
+        }
+
+        function redirectToServices() {
+            window.location.href = "https://quasarnet.github.io/Quasar/website/services/services.html";
+        }
+
+        function closeSite() {
+            window.open('', '_self').close();
+        }
+    </script>
+</body>
+    
+</html>
