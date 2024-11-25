@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The official Quasar Developer website.">
+    <meta name="keywords" content="Official, Quasar, Developer, Development, Website, Project, Projects, Service, Services, Free, Cheap">
+    <meta name="author" content="Quasar Developer">
+    <title>Quasar | Home</title>
+    <link rel="icon" href="https://quasarnet.github.io/Quasar/assets/images/branding/favicon.ico">
+    <link rel="stylesheet" href="https://quasarnet.github.io/Quasar/assets/css/responsive.css">
+    <link rel="stylesheet" href="https://quasarnet.github.io/Quasar/assets/css/background.css">
+    <link rel="stylesheet" href="https://quasarnet.github.io/Quasar/assets/css/scrollbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+    
+    <style>
+        @keyframes backdropshadow {
+            0% {
+                box-shadow: 0px 4px 20px 2px #5d3c81
+            }
+
+            50% {
+                box-shadow: -2px 9px 20px 2px #5d3c81
+            }
+
+            100% {
+                box-shadow: 0px 4px 20px 2px #5d3c81
+            }
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #232323;
+            position: fixed;
+            width: 100%;
+            height: 80px;
+            top: 0;
+            left: 0;
+            animation: backdropshadow 5s infinite;
+        }
+
+        header div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        header ul li {
+            list-style: none;
+            display: flex;
+            gap: 15vw;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        header div:hover .icon-name {
+            display: flex;
+        }
+
+        .icon-name {
+            display: none;
+            text-align: center;
+            z-index: 999;
+            width: auto;
+            position: absolute;
+            background-color: #535353;
+            color: white;
+            padding: 10px 10px;
+            margin-top: 45px;
+            border-radius: 8px;
+            font-size: 14.5px;
+        }
+
+        .menu {
+            background-color: aqua;
+            border-radius: 10px;
+            width: 100px;
+        }
+
+        .menu p {
+            padding: 10px 10px;
+        }
+
+        header .material-icons-round {
+            font-size: 35px;
+        }
+
+        .content {
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content .material-icons-round {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .content p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #1e1e1e;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+                <ul>
+                    <li>
+                        <div>
+                            <a href="https://quasarnet.github.io/Quasar/website/home.html">
+                                <span class="material-icons-round">home</span>
+                            </a>
+                            <p class="icon-name">Home</p>
+                        </div>
+
+                        <div>
+                            <a href="https://quasarnet.github.io/Quasar/website/info/about.html">
+                                <span class="material-icons-round">info</span>
+                            </a>
+                            <p class="icon-name">Infomation</p>
+                            <div class="menu">
+                                <p>About us</p>
+                                <p>Social Media</p>  
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="https://quasarnet.github.io/Quasar/website/projects/webview-apks.html">
+                                <span class="material-icons-round">star</span>
+                            </a>
+                            <p class="icon-name">Projects</p>
+                            <div class="menu">
+                                    
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="https://quasarnet.github.io/Quasar/website/services/services.html">
+                                <span class="material-icons-round">build</span>
+                            </a>
+                            <p class="icon-name">services</p>
+                            <div class="menu">
+                                    
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <a href="https://quasarnet.github.io/Quasar/" onclick="closeSite()">
+                                <span class="material-icons-round">exit_to_app</span>
+                            </a> 
+                            <p class="icon-name">Exit</p>
+                        </div>
+                    </li>
+                </ul>
+        </header>
+
+        <section class="content">
+            <span class="material-icons-round">home</span>
+            <br>
+            <h2>Home</h2>
+            <p>Choose where You want to go!</p>
+            <button onclick="redirectToInfo()">Info</button>
+            <button onclick="redirectToProjects()">Projects</button>
+            <button onclick="redirectToServices()">Services</button>
+        </section>
+    </main>
+
+    <script>
+        function redirectToInfo() {
+            window.location.href = "https://quasarnet.github.io/Quasar/website/info/about.html";
+        }
+
+        function redirectToProjects() {
+            window.location.href = "https://quasarnet.github.io/Quasar/website/projects/webview-apks.html";
+        }
+
+        function redirectToServices() {
+            window.location.href = "https://quasarnet.github.io/Quasar/website/services/services.html";
+        }
+
+        function closeSite() {
+            window.open('', '_self').close();
+        }
+    </script>
+</body>
+    
+</html>
